@@ -1,21 +1,19 @@
 class UsersController < ActionController::Base
-    layout 'application'
-    
-    def index
-    end
+  layout 'application'
 
-    def show
-      #  @user = User.find(params[:id])
-    end
+  def index; end
 
-    def list
-       # @user = User.find(params[:id])
-       # @posts = @user.posts
-    end
-    
-    def posts
-        # @user = User.find(params[:id])
-        # @post = Post.find(params[:id])
-    end
+  def show
+    #  @user = User.find(params[:id])
+  end
 
+  def list
+    # @user = User.find(params[:id])
+    # @posts = @user.posts
+  end
+
+  def posts
+    # @user = User.find(params[:id])
+    # @post = Post.find(params[:id])
+  end
 end
