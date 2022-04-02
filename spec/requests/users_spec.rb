@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe "Users", type: :request do
-  describe "GET /index" do
+RSpec.describe 'Users', type: :request do
+  describe 'GET /index' do
     before(:example) { get users_path }
     it 'Successfuly get route' do
       expect(response).to have_http_status(:ok)
@@ -14,7 +14,7 @@ RSpec.describe "Users", type: :request do
     end
   end
 
-  describe "GET /show" do
+  describe 'GET /show' do
     before(:example) { get '/users/20' }
     it 'Successfuly get route' do
       expect(response).to have_http_status(:ok)
@@ -27,7 +27,7 @@ RSpec.describe "Users", type: :request do
     end
   end
 
-  describe "GET /list" do
+  describe 'GET /list' do
     before(:example) { get '/users/20/posts' }
     it 'Successfuly get route' do
       expect(response).to have_http_status(:ok)
@@ -40,7 +40,7 @@ RSpec.describe "Users", type: :request do
     end
   end
 
-  describe "GET /posts" do
+  describe 'GET /posts' do
     before(:example) { get '/users/20/posts/20' }
     it 'Successfuly get route' do
       expect(response).to have_http_status(:ok)
