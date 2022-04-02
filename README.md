@@ -1,6 +1,6 @@
 # Rails Blog
 
-> In this project, you will create all controllers and views for your Blog app. As you won't be processing any data yet, you will add simple placeholders for your views with plain HTML.
+> The Personal Blog  app keeps track of all your blog, article , and essay . It will allow you to save the article, keep track of what you have, create an article, and generate an essay list based on what you have and what you are missing from the article. Also, since sharing the article is an important part of the essay, the app should allow you to make them public, so anyone can access them.
 ## Project requirements
 
 The project requirements can be viewed [here](https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/projects/Setup_Controllers_project.md)
@@ -18,22 +18,27 @@ Install [rails](https://guides.rubyonrails.org/getting_started.html)
 Install [sqlite3](https://www.sqlite.org/index.html)
 
 ### Setup
-
-N/A
-
-### Install
-
-N/A
+- Install gems with:
+- ` bundle install` 
+- Setup database with
+- `rails db:create`
+- `rails db:migrate`
 
 ### Usage
 
 - run: `git clone https://github.com/AtillaTahak/rails-blog.git`
 - run: `rails s`
+- Open http://localhost:3000/ in your browser. 
 
-### Deployment
-
-N/A
-
+### Run tests
+- install npm with:
+- `npm i`
+- install rspec with:
+- `bundle install`
+- and
+- ` rails generate rspec:install`
+- Run the test with:
+- `rspec spec`
 ## Author
 
 👤 **ATİLLA TAHA KÖRDÜĞÜM**
