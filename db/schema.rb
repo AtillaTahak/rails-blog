@@ -27,9 +27,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_13_211910) do
   create_table "likes", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "post_id", null: false
     t.bigint "user_id", null: false
-    t.index ["post_id"], name: "index_likes_on_post_id"
     t.index ["user_id"], name: "index_likes_on_user_id"
   end
 
@@ -40,6 +38,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_13_211910) do
     t.integer "likes_counter"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
     t.bigint "user_id", null: false
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
@@ -48,14 +47,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_13_211910) do
     t.string "name"
     t.string "photo"
     t.text "bio"
-    t.integer "post_counter"
+    t.integer "posts_counter"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "address"
+    t.index ["address"], name: "index_users_on_address"
   end
 
   add_foreign_key "comments", "posts"
   add_foreign_key "comments", "users"
-  add_foreign_key "likes", "posts"
   add_foreign_key "likes", "users"
   add_foreign_key "posts", "users"
 end
