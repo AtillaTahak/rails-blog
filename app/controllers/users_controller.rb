@@ -1,6 +1,4 @@
-class UsersController < ActionController::Base
-  layout 'application'
-
+class UsersController < ApplicationController
   def index
     @users = User.all
   end
@@ -8,8 +6,4 @@ class UsersController < ActionController::Base
   def show
     @user = User.find(params[:id])
   end
-
-  def list; end
-
-  def posts; end
 end
