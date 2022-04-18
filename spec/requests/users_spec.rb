@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Users', type: :request do
   describe 'GET /index' do
-<<<<<<< HEAD
+
     it 'should returns http 200 success' do
       get users_path
       expect(response).to have_http_status(200)
@@ -11,7 +11,7 @@ RSpec.describe 'Users', type: :request do
     it 'should include Number of posts' do
       get users_path
       expect(response.body).to include('Number of Posts:')
-=======
+
     before(:example) { get '/users' }
     it 'Successfuly get route' do
       expect(response).to have_http_status(:ok)
@@ -23,12 +23,11 @@ RSpec.describe 'Users', type: :request do
 
     it 'Checks if users/index html elements rendered' do
       expect(response.body).to include('User List Page')
->>>>>>> 6466484ec6351576f47c952ee13858fee075016d
+
     end
   end
 
   describe 'GET /show' do
-<<<<<<< HEAD
     user = User.create('name' => 'Heyo', 'bio' => 'alive', 'photo' => 'Cat.png', 'posts_counter' => 0)
     before(:each) { get user_path id: user.id }
 
@@ -38,7 +37,7 @@ RSpec.describe 'Users', type: :request do
 
     it 'should render the show template ' do
       expect(response).to render_template(:show)
-=======
+
     before(:example) { get '/users/1' }
 
     it 'Response status correct' do
@@ -51,7 +50,6 @@ RSpec.describe 'Users', type: :request do
 
     it 'Checks if response body includes correct placeholder text' do
       expect(response.body).to include('Specific User Page')
->>>>>>> 6466484ec6351576f47c952ee13858fee075016d
     end
   end
 end

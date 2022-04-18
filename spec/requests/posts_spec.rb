@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
   describe 'GET /index' do
-<<<<<<< HEAD
+    
     before(:each) { get '/users/1/posts' }
 
     it 'checks if action returns correct response status' do
@@ -15,7 +15,7 @@ RSpec.describe 'Posts', type: :request do
 
     it 'checks if correct placeholder is shown' do
       expect(response.body).to include('Number of Posts:')
-=======
+
     before(:example) { get '/users/1/posts' }
 
     it 'Checks if status correct' do
@@ -44,7 +44,6 @@ RSpec.describe 'Posts', type: :request do
 
     it 'Checks if response body includes correct placeholder text' do
       expect(response.body).to include("Show User's Specific Post")
->>>>>>> 6466484ec6351576f47c952ee13858fee075016d
     end
   end
 end

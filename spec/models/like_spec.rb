@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Like, type: :model do
-<<<<<<< HEAD
   it 'tests that Like model is created correctly' do
     like = Like.new
     like.build_user(name: 'Orcun')
@@ -17,7 +16,6 @@ RSpec.describe Like, type: :model do
     post.likes_counter = post.likes.length
     expect(post.likes_counter).to eql(1)
   end
-=======
   pending "add some examples to (or delete) #{__FILE__}"
->>>>>>> 6466484ec6351576f47c952ee13858fee075016d
+
 end

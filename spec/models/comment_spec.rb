@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
-<<<<<<< HEAD
+
   it 'posts comments' do
     author = User.new(name: 'Tom', photo: 'Cat.png', bio: 'bio', posts_counter: 0)
     post = Post.new(title: 'New post', text: 'Good evening', user: author, likes_counter: 0, comments_counter: 0)
@@ -12,7 +12,5 @@ RSpec.describe Comment, type: :model do
     post.comments.create!(text: 'This is my second post', user: comment_creator)
     expect(post.comments.length).to eql(2)
   end
-=======
   pending "add some examples to (or delete) #{__FILE__}"
->>>>>>> 6466484ec6351576f47c952ee13858fee075016d
 end
