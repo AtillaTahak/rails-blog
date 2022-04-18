@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
-
   it 'posts comments' do
     author = User.new(name: 'Tom', photo: 'Cat.png', bio: 'bio', posts_counter: 0)
     post = Post.new(title: 'New post', text: 'Good evening', user: author, likes_counter: 0, comments_counter: 0)

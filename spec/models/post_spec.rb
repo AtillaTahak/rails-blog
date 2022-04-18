@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  
   describe 'Post model' do
     user = User.create(name: 'Orçun', bio: 'bio')
     subject do
