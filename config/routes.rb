@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :users, only: %i[show index] do
     resources :posts, only: %i[show create new index]
   end
-
+  devise_for :users
   root to: 'users#index'
 
   resources :posts do
