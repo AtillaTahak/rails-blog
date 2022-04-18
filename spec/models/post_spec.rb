@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
+<<<<<<< HEAD
   describe 'Post model' do
     user = User.create(name: 'Orçun', bio: 'bio')
     subject do
@@ -35,4 +36,7 @@ RSpec.describe Post, type: :model do
       expect(subject.recent_comments).to eq(subject.comments.last(5))
     end
   end
+=======
+  pending "add some examples to (or delete) #{__FILE__}"
+>>>>>>> 6466484ec6351576f47c952ee13858fee075016d
 end

@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+<<<<<<< HEAD
   describe 'User model' do
     subject { User.new(name: 'Amy', photo: 'Tom.png', bio: 'bio', posts_counter: 0) }
     before { subject.save }
@@ -31,4 +32,7 @@ RSpec.describe User, type: :model do
       expect(subject.recent_three_posts).to eq(subject.posts.last(3))
     end
   end
+=======
+  pending "add some examples to (or delete) #{__FILE__}"
+>>>>>>> 6466484ec6351576f47c952ee13858fee075016d
 end
