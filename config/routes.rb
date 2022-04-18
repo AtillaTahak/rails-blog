@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :models
   resources :users, only: %i[show index] do
     resources :posts, only: %i[show create new index]
   end
