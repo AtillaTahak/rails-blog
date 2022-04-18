@@ -16,4 +16,5 @@ RSpec.describe Like, type: :model do
     post.likes_counter = post.likes.length
     expect(post.likes_counter).to eql(1)
   end
+  pending "add some examples to (or delete) #{__FILE__}"
 end

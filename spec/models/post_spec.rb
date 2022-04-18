@@ -35,4 +35,5 @@ RSpec.describe Post, type: :model do
       expect(subject.recent_comments).to eq(subject.comments.last(5))
     end
   end
+  pending "add some examples to (or delete) #{__FILE__}"
 end

@@ -11,4 +11,6 @@ RSpec.describe Comment, type: :model do
     post.comments.create!(text: 'This is my second post', user: comment_creator)
     expect(post.comments.length).to eql(2)
   end
+  
+  pending "add some examples to (or delete) #{__FILE__}"
 end

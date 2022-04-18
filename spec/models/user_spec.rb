@@ -31,4 +31,5 @@ RSpec.describe User, type: :model do
       expect(subject.recent_three_posts).to eq(subject.posts.last(3))
     end
   end
+  pending "add some examples to (or delete) #{__FILE__}"
 end
