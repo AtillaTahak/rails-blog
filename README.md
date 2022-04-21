@@ -19,7 +19,7 @@ Install [sqlite3](https://www.sqlite.org/index.html)
 
 ### Setup
 - Install gems with:
-- ` bundle install` 
+- ` bundle install`
 - Setup database with
 - `rails db:create`
 - `rails db:migrate`
@@ -28,7 +28,7 @@ Install [sqlite3](https://www.sqlite.org/index.html)
 
 - run: `git clone https://github.com/AtillaTahak/rails-blog.git`
 - run: `rails s`
-- Open http://localhost:3000/ in your browser. 
+- Open http://localhost:3000/ in your browser.
 
 ### Run tests
 - install npm with:
@@ -48,6 +48,12 @@ Install [sqlite3](https://www.sqlite.org/index.html)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/atilla-taha-k%C3%B6rd%C3%BC%C4%9F%C3%BCm-a93702186/)
 - Blog: [Blog](https://github.com/AtillaTahak/school_library/blob/dev/atillataha.blogspot.com)
 - Youtube: [YouTube](https://www.youtube.com/channel/UCmoD0x4Z9vdG2PCsI5p8FYg)
+
+👤 **SadiQ HabiL**
+
+- GitHub: [@kingqabil](https://github.com/kingqabil)
+- Twitter: [@kingqabil](https://twitter.com/kingqabil)
+- LinkedIn: [@kingqabil](https://linkedin.com/in/kingqabil)
 
 
 ## 🤝 Contributing
