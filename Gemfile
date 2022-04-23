@@ -31,8 +31,8 @@ gem 'stimulus-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
-gem 'devise'
 gem 'cancancan'
+gem 'devise'
 
 group :development, :test do
   gem 'database_cleaner'
