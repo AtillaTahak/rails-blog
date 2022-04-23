@@ -34,6 +34,10 @@ gem 'jbuilder'
 gem 'devise'
 gem 'cancancan'
 
+group :development, :test do
+  gem 'database_cleaner'
+end
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
