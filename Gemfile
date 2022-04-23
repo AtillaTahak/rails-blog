@@ -33,7 +33,8 @@ gem 'jbuilder'
 
 gem 'cancancan'
 gem 'devise'
-
+gem 'oj'
+gem 'rabl'
 group :development, :test do
   gem 'database_cleaner'
 end
